@@ -14,7 +14,7 @@ const forecast = (latitude, longitde, callback) => {
       }
       else
       {
-          callback(undefined,' temperature is '+body.main.temp)
+          callback(undefined,' temperature is '+body.main.temp+' and weather is '+body.weather[0].description)
       }
   });
 };
